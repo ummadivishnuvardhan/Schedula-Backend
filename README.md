@@ -1,84 +1,27 @@
-✅ Task 1: Database Architecture & Domain Modeling
+✅ Task 1: ER Diagram Design
 
-Designed and structured the foundational data model using an ER Diagram focused on scalability and role-driven access control.
+Designed database structure with:
 
-🔹 Core Entities Designed
-
-User
-
-Implemented role-based authentication structure
-
-Supports multiple roles (e.g., Doctor, Patient)
+User (role-based authentication)
 
 Doctor Profile
 
-Linked with User entity
-
-Structured for specialization-based mapping
-
 Patient Profile
-
-Associated with User entity
-
-Designed for extensibility (medical history, appointments, etc.)
 
 Verification Token
 
-Token-based verification mechanism
-
-Linked with User for account validation workflows
-
 Specialization
 
-Independent entity
+Defined proper relationships (1–1 and 1–many)
 
-Supports one-to-many relationship with Doctors
+Ensured clean, scalable schema design
 
-🔹 Relationship Design Highlights
+✅ Task 2: NestJS Backend Setup
 
-One-to-One: User ↔ Doctor Profile
+Initialized NestJS project with modular structure
 
-One-to-One: User ↔ Patient Profile
+Created Hello Module (Module, Controller, Service)
 
-One-to-Many: Specialization → Doctors
+Implemented GET /hello endpoint
 
-One-to-One: User → Verification Token
-
-Focus Areas:
-
-Clean normalization
-
-Future-proof structure
-
-Secure authentication foundation
-
-Clear separation of identity and profile data
-
-✅ Task 2: Backend Initialization & Modular Setup (NestJS)
-
-Established the backend architecture using a modular and scalable structure with NestJS.
-
-🔹 Project Initialization
-
-Set up a structured NestJS application
-
-Organized folders following modular architecture principles
-
-Prepared environment for scalable feature additions
-
-🔹 Implemented Hello Module (Proof of Architecture)
-
-Created a fully functional modular feature:
-
-Hello Module
-
-Hello Controller
-
-Hello Service
-
-🔹 Endpoint Developed
-GET /hello
-
-✔ Returns structured JSON response
-✔ Verified using Browser and Postman
-✔ Confirmed controller-service interaction
+Tested successfully using browser and Postman
